@@ -59,27 +59,10 @@ print()
 # import time
 # count = 0
 
-while count < 5: 
-    print(f"Loopin'. We are on loop # {count}.")
-    count += 1
-    time.sleep(0.5)
 
-print("We have escaped the loop!")
+#Challenge 1
 
-user_input = ""
-
-while user_input != "exit":
-    user_input = input("Type 'exit' to escape:")
-
-count = 60
-increment = 1
-
-while count > 0:
-    count -= increment
-    increment += 1
-        
-    if count < 0:
-        break
-
-    print(count)
-
+fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+number = input("Pick how many fruits:")
+for fruit in fruits[number]:
+    print("You picked:", fruit)
